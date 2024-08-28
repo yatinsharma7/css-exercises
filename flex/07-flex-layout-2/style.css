@@ -12,7 +12,7 @@ body {
 
 .header {
   height: 72px;
-  background-color: darkmagenta;
+  background-color: rgb(5, 9, 7);
   padding: 0 16px;
   font-size: 32px;
   font-weight: 900;
@@ -31,12 +31,17 @@ body {
 
 .sidebar {
   width: 300px;
-  background-color: rgb(97, 97, 249);
+  background-color: #eee;
   flex-shrink: 0;
   gap: 14px;
   padding: 16px;
 }
 
+.sidebar-content {
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,.06);
+}
 ul {
   list-style-type: none;
   color: white;
@@ -50,9 +55,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
-
+  color: rgb(4, 13, 26);
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
+
+
 
 .container {
   display: flex;
@@ -63,10 +72,11 @@ a {
 
 .card {
   border: 2px solid #eee;
-  border-radius: 4px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 6px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,.06);
   padding: 16px;
   width: 300px;
+  /* height: 200px; */
 }
 .footer {
   display: flex;
@@ -75,6 +85,3 @@ a {
   padding: 20px;
 }
 
-.header, .content, .footer {
-  border: 2px solid brown;
-}
